@@ -24,7 +24,7 @@ program
           if (err) throw err;
           let _data = JSON.parse(data.toString())
           _data.name = program.init
-          _data.version = '1.0.0'
+          _data.version = '0.0.1'
           let str = JSON.stringify(_data, null, 4);
           fs.writeFile(`${process.cwd()}/${program.init}/package.json`, str, function (err) {
             if (err) throw err;
